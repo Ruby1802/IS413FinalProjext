@@ -171,6 +171,7 @@ public class MainActivity extends AppCompatActivity {
                     resultBox.append(String.valueOf(digit));
                 } catch (Exception e) {
                     Log.v(TAG, e.getMessage());
+                    resultBox.setText("Run error: " + e.getMessage());
                 }
                 // clear the drawing area
                 drawArea.clear();
